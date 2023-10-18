@@ -31,6 +31,7 @@ p {
 
 ul {
   margin: 0;
+
   padding: 0;
   list-style: none;
 }
@@ -40,7 +41,8 @@ picture {
   padding: 0;
 }
 
-button, a {
+button,
+a {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
@@ -60,10 +62,10 @@ button, a {
   bottom: 20px;
 }
 
-@media (width < 668px) and (width >= 375px) {
+@media (width < 768px) and (width >= 375px) {
   .decorated-zone::before {
     left: 10px;
-    bottom: 20px;
+    bottom: 17px;
   }
 }
 
@@ -78,7 +80,7 @@ button, a {
   top: 20px;
 }
 
-@media (width < 668px) and (width >= 375px) {
+@media (width < 768px) and (width >= 375px) {
   .decorated-zone::after {
     right: 10px;
     top: 10px;

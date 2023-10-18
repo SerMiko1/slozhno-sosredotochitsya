@@ -1,16 +1,16 @@
 
-.page.theme_dark {
+.page.theme-dark {
   --main-text-color: #f1b2ce;
   --title-color: #db00ff;
-  --title-shadow: #ff0070;
+  --title-shade: #ff0070;
   --hover-color: 1px solid rgba(255, 0, 112, 0.5);
   --background-color: #000028;
+  --rec-color: var(--title-shade);
   --background-image: url(../images/cover-image-dark.png);
   --article-title-color: var(--background-color);
-  --section-title-color: var(--title-shadow);
+  --section-title-color: var(--title-shade);
   --border-color: var(--main-text-color);
-  --corners-color: var(--title-shadow);
-  --title-decor: var(--title-shadow);
-  --link-shadow: var(--title-shadow);
-  --rec-color: var(--title-shadow);
+  --corners-color: var(--title-shade);
+  --title-decor: var(--title-shade);
+  --link-shade: var(--title-shade);
 }

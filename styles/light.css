@@ -1,19 +1,20 @@
-.page.theme_light {
+
+.page.theme-light {
   --main-text-color: #353430;
   --title-color: #ffc2e6;
-  --title-shadow: #ff0070;
+  --title-shade: #ff0070;
   --title-decor: #ff8dcb;
   --hover-color: 1px solid rgba(50, 49, 45, 0.4);
   --background-color: #fff1f7;
+  --rec-color: var(--background-color);
   --background-image: url(../images/cover-image-light.png);
   --article-title-color: var(--main-text-color);
   --section-title-color: var(--main-text-color);
-  --border-color: var(--title-shadow);
+  --border-color: var(--title-shade);
   --corners-color: var(--main-text-color);
-  --link-shadow: var(--title-color);
-  --rec-color: var(--background-color);
+  --link-shade: var(--title-color);
 }
 
-.page.theme_light .rec {
+.page.theme-light .rec {
   display: none;
 }
