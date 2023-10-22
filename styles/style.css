@@ -1,4 +1,3 @@
-
 .page {
   background: var(--background-image) no-repeat top center,
     var(--background-color);
@@ -26,16 +25,16 @@
 }
 
 .header-rec {
-  position: absolute;
   color: var(--rec-color);
+  position: absolute;
   text-transform: uppercase;
-  top: 21px;
+  top: 20px;
   right: 49px;
 }
 
 @media (width < 768px) and (width >= 375px) {
   .header-rec {
-    top: 11px;
+    top: 10px;
     right: 39px;
   }
 }
@@ -43,12 +42,12 @@
 .header-rec::after {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
+  background-color: var(--rec-color);
   margin: -5px -20px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--rec-color);
-  background-color: var(--rec-color);
+  width: 9px;
+  height: 9px;
   top: 50%;
   right: 0;
 }
@@ -60,7 +59,6 @@
 .header-theme-menu-list {
   display: flex;
   justify-content: center;
-  gap: 12px;
 }
 
 @media (width < 1024px) {
@@ -70,16 +68,13 @@
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
-  .header-theme-menu-list {
-    gap: 11px;
-  }
-}
-
 .header-theme-menu-button {
-  font-size: 18px;
-  font-weight: 400;
   color: var(--corners-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: var(--font-family);
   line-height: 100%;
   padding: 2.5px 12px;
   border: transparent;
@@ -165,7 +160,7 @@
   }
 }
 
-.header-subtitle {
+.header-text {
   color: var(--article-title-color);
   align-self: flex-end;
   font-weight: 700;
@@ -173,7 +168,7 @@
 }
 
 @media (width < 425px) {
-  .header-subtitle {
+  .header-text {
     width: 100%;
   }
 }
