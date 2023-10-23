@@ -11,7 +11,13 @@
   --section-title-color: var(--main-text-color);
   --border-color: var(--title-shade);
   --corners-color: var(--main-text-color);
-  --link-shade: var(--title-color);
+  --link-shade: var(--title-decor);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --rec-color: var(--background-color);
+  }
 }
 
 .page.theme-light .rec {

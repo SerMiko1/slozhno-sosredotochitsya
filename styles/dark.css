@@ -13,3 +13,9 @@
   --title-decor: var(--title-shade);
   --link-shade: var(--title-shade);
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --rec-color: var(--title-shade);
+  }
+}

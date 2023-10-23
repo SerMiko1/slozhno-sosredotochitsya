@@ -12,16 +12,6 @@
   --border-color: var(--main-text-color);
   --corners-color: var(--title-shade);
   --title-decor: var(--title-shade);
+  --transition-duration: 0.5s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --rec-color: var(--title-shade);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --rec-color: var(--background-color);
-  }
-}
