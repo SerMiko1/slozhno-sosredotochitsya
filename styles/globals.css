@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: var(--font-family), "value";
+  font-family: var(--font-family), "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   min-inline-size: 375px;

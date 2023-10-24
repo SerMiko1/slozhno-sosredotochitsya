@@ -80,7 +80,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  font-family: var(--font-family), "value";
+  font-family: var(--font-family), "Arial", sans-serif;
   line-height: 100%;
   padding: 2.5px 12px;
   border: transparent;
@@ -94,15 +94,17 @@
 }
 
 .header-theme-menu-button:focus {
-  border: none;
+  outline: none;
 }
 
 .header-theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--corners-color);
+  outline: none;  
 }
 
 .header-theme-menu-button-active {
   border: 1px solid;
+  pointer-events: none;
 }
 
 @media (width < 1024px) and (width >= 768px) {
@@ -293,7 +295,7 @@
 
 .section-article-text-link {
   border: transparent;
-  text-shadow: 3px 3px 0px var(--link-shade);
+  text-shadow: 1px 2px 0px var(--title-decor);
   transition-duration: var(--transition-duration);
 }
 
@@ -309,36 +311,51 @@
   outline: 1px solid var(--main-text-color);
 }
 
-.section-first-grid,
-.section:nth-of-type(3) {
+.section-first-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.section-first-grid .section-title,
-.section:nth-of-type(3) .section-title {
+.section-last-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-first-grid .section-title{
+  flex: 0 0 auto;
+  width: 33%;
+}
+
+.section-last-grid .section-title {
   flex: 0 0 auto;
   width: 33%;
 }
 
 @media (width < 1024px) and (width >= 768px) {
   .section:first-of-type .section-title,
-  .section:nth-of-type(3) .section-title {
+  .section-last-grid .section-title {
     width: 32%;
   }
 }
 
 @media (width < 768px) and (width >= 375px) {
   .section-first-grid .section-title,
-  .section:nth-of-type(3) .section-title {
+  .section-last-grid .section-title {
     width: 100%;
     margin-bottom: 20px;
   }
 }
 
-.section-first-grid .section-article-list,
-.section:nth-of-type(3) .section-article-list {
+.section-first-grid .section-article-list {
+  flex: 0 0 auto;
+  width: 66%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-last-grid .section-article-list {
   flex: 0 0 auto;
   width: 66%;
   flex-direction: column;
@@ -347,14 +364,14 @@
 
 @media (width < 1024px) and (width >= 768px) {
   .section-first-grid .section-article-list,
-  .section:nth-of-type(3) .section-article-list {
+  .section-last-grid .section-article-list {
     width: 65%;
   }
 }
 
 @media (width < 768px) and (width >= 375px) {
   .section-first-grid .section-article-list,
-  .section:nth-of-type(3) .section-article-list {
+  .section-last-grid .section-article-list {
     width: 100%;
   }
 }

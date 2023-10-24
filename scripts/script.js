@@ -37,10 +37,10 @@ function initTheme() {
       btn.removeAttribute('disabled');
     });
     document
-      .querySelector(`.header-theme-menu-button_type_${theme}`)
+      .querySelector(`.header-theme-menu-button-type-${theme}`)
       .classList.add('header-theme-menu-button-active');
     document
-      .querySelector(`.header-theme-menu-button-type_${theme}`)
+      .querySelector(`.header-theme-menu-button-type-${theme}`)
       .setAttribute('disabled', true);
   }
 }
