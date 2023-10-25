@@ -1,5 +1,5 @@
 :root {
-  --font-family: "IBM Plex Mono", 'Arial', sans-serif;
+  --font-family: "IBM Plex Mono", "Arial", sans-serif;
   --rec-color: var(--title-shade);
   --title-color: #db00ff;
   --title-shade: #ff0070;
@@ -14,4 +14,3 @@
   --title-decor: var(--title-shade);
   --transition-duration: 0.5s;
 }
-

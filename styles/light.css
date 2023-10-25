@@ -14,12 +14,6 @@
   --link-shade: var(--title-decor);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --rec-color: var(--background-color);
-  }
-}
-
 .page.theme-light .rec {
   display: none;
 }
